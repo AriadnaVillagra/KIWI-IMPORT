@@ -1,9 +1,25 @@
-class ReadCsv():
+# class ReadCsv():
 
-    def readCsv(self,pathOfCsv):
+#     def readCsv(self,pathOfCsv):
+#         output = []
+#         csvFile = open(pathOfCsv, newline='')
+#         for line in csvFile:
+#             row = [line]
+#             output.append(row)
+#         return output
+
+import csv
+
+class ReadCsv:
+    def readCsv(self, pathOfCsv):
         output = []
-        csvFile = open(pathOfCsv, newline='')
-        for line in csvFile:
-            row = [line]
-            output.append(row)
+        with open(pathOfCsv, mode='r', encoding='utf-8', newline='') as csvFile:
+            reader = csv.reader(csvFile, delimiter=',', quotechar='"')
+            for idx, row in enumerate(reader):
+                if not row:  # Ignorar filas vacías
+                    print(f"Fila {idx + 1} está vacía, se omitirá.")
+                    continue
+                print(f"Fila {idx + 1} leída: {row}")  # Depuración
+                output.append(row)
         return output
+
