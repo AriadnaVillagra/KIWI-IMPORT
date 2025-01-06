@@ -109,8 +109,11 @@ class Main:
 if __name__ == "__main__":
     root = tk.Tk()
     app = Main(root)
-    root.mainloop()
-
+    try:
+        root.mainloop()
+    except Exception as e:
+        print(f"Error inesperado: {e}")
+        input("Presiona Enter para cerrar...")
 
 
 # ID AUTOR: 2 -> bananaqa 3-> NOE 1-> AnonymousUser 4 -> LucasM 5 -> Ari
