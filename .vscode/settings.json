@@ -1,0 +1,29 @@
+{
+    "workbench.colorCustomizations": {
+        //barrita de abajo
+        "statusBar.background": "#e4f3a3",
+        "statusBar.foreground": "#9b0d88",
+        "activityBar.background": "#fa71e8",
+        "activityBar.foreground":  "#f6fa00",
+        "titleBar.activeBackground": "#960d8a",
+        "titleBar.activeForeground": "#def869",
+        "titleBar.inactiveBackground": "#e2f19f",
+        "activityBar.inactiveForeground": "#20201c",
+        "panel.background": "#241722",
+        "testing.iconPassed": "#f30eba",
+        "testing.iconFailed": "#f6fa00",
+        "panelTitle.activeBorder" : "#f6fa00",
+        //textos
+        "editor.background": "#31001d",
+        //color de la coma y otros textos
+      //  "editor.foreground": "#def869",
+        "editor.lineHighlightBackground": "#f57fef3d",
+        // Barra lateral (explorador de archivos)
+        "sideBar.background": "#2c0c1b",
+        "sideBar.foreground": "#df82c7"
+    },
+    "editor.codeActionsOnSave": [
+        "source.organizeImports",
+        "source.fixAll"
+    ]
+}

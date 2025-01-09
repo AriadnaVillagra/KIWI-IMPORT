@@ -1,16 +1,6 @@
-# class ReadCsv():
-
-#     def readCsv(self,pathOfCsv):
-#         output = []
-#         csvFile = open(pathOfCsv, newline='')
-#         for line in csvFile:
-#             row = [line]
-#             output.append(row)
-#         return output
-
 import csv
 
-class ReadCsv:
+class ReadCsv():
     def readCsv(self, pathOfCsv):
         output = []
         with open(pathOfCsv, mode='r', encoding='utf-8', newline='') as csvFile:
